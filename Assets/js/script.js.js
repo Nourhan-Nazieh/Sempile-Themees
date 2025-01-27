@@ -30,3 +30,23 @@ btn.onclick = function(){
    }
 
    }
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const heading = document.querySelector("h1.text-center");
+    const text = "Welcome in Our Products";
+    let index = 0;
+    heading.innerHTML = "";
+    // إضافة كل حرف بالتدريج
+    function typeEffect() {
+      if (index < text.length) {
+        heading.innerHTML += text[index];
+        index++;
+        setTimeout(typeEffect, 100); 
+      } else {
+        heading.innerHTML += ' <i class="fa-solid fa-tags fa-fade fa-xl" style="color: #daa952;"></i>';
+      }
+    }
+  
+    typeEffect();
+  });
+  

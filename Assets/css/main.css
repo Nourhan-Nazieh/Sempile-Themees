@@ -2,7 +2,7 @@
 body{
 
 transition: all .5s;
-background-image: url(../Assets/imag/backBest-Selling.png);
+background-image: url(../imag/backBest-Selling.png);
 background-attachment: fixed;
 background-size: cover;
 }
